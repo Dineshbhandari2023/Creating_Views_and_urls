@@ -17,11 +17,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from myapp.views import aboutMe, aboutYou, add
+from myapp.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('about/', aboutMe),
-    path('you/<str:name>/', aboutYou),
-    path('add/<int:num1>/<int:num2>', add),
+    path('', home, name="home"),
+    # path('you/<str:name>/', aboutYou),
+    # path('add/<int:num1>/<int:num2>', add),
 ]
