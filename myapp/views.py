@@ -3,7 +3,7 @@ from django.shortcuts import render
 
 # Creating our views here.
 def home(request):
-    return render(request, "myapp/templates/index.html")
+    return render(request, "index.html")
 
 # def aboutYou(request, name):
 #     return HttpResponse(f"Ohh! you are {name}")
